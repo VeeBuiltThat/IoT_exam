@@ -61,7 +61,7 @@ Install via Arduino Library Manager: `Sketch → Include Library → Manage Libr
 
 ```
 rf-clown/
-├── rf-clown.ino     # Main sketch: setup, loop, menu, channel hopper
+├── main.ino     # Main sketch: setup, loop, menu, channel hopper
 ├── config.h         # Enums, pin definitions, extern declarations
 ├── config.cpp       # Global state, channel arrays, radio instance
 ├── setting.h        # RF24 include + configureNrf() declaration
@@ -135,7 +135,7 @@ Every channel hop is logged to serial:
 
 ## Configuration
 
-Key constants in `rf-clown.ino`:
+Key constants in `main.ino`:
 
 ```cpp
 #define HOP_INTERVAL 50   // ms between channel hops — lower = faster
